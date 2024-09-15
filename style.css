@@ -1,0 +1,11 @@
+*{
+    box-sizing: border-box;
+}
+nav, footer {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+section, footer, header {
+    height: 14.3vh
+}
