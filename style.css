@@ -1,11 +1,67 @@
-*{
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
-nav, footer {
+a {
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+}
+a:hover {
+    transform: scale(1.1);
+    transition: all 0.3s;
+    text-decoration: underline;
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+.container {
+    background-color: beige;
+    height: 100px;
+}
+.container, .hero {
+    display: flex;
+    justify-content: space-between;
+}
+.center {
+    display: flex;
+    align-items: center;
+}
+.container .left,.container .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.hero .left, .hero .right {
+    margin-top: 100px;
+}
+.left p, .about p, .contact p {
+    font-size: 24px;
+}
+.hero .left {
+    padding: 20px;
+}
+.hero, .menu, .about, .contact, .container, footer{
+    padding:30px;
+}
+.menu, .contact {
+    background-color: beige;
+}
+.items {
+    display: flex;
+    justify-content: space-between;
+}
+h3 {
+    margin-left: 80px;
+}
+h4 {
     display: flex;
     justify-content: center;
-    gap: 10px;
 }
-section, footer, header {
-    height: 14.3vh
+footer {
+    display: flex;
+    justify-content: center;
 }
