@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buna House</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
     <header>
@@ -49,7 +50,7 @@
     </div>
     <div id="menu">
         <h2>Menu</h2>
-        <div class="items">
+        <!--<div class="items">
             <div class="cappuccino">
                 <img src="cappuccino.webp" height="200px" alt="cappuccino"/>
                 <h3>Cappuccino</h3>
@@ -65,6 +66,15 @@
                 <h3>Ice Latte</h3>
                 <h4>$5.99</h4>
             </div>
+        </div> !-->
+        <div class="slider">
+            <div class="slides">
+                <img class="slide cappuccino" src="cappuccino.jpeg" height="200px" alt="cappuccino"/>
+                <img class="slide espresso" src="espresso.png" height="190px" alt="espresso">
+                <img class="slide ice_latte" src="ice_latte.webp" height="200px" alt="Ice Latte">
+            </div>
+            <button class="prev" onclick="prevSlide()">&#10094</button>
+            <button class="next" onclick="nextSlide()">&#10095</button>
         </div>
     </div>
     <div class="contact">
